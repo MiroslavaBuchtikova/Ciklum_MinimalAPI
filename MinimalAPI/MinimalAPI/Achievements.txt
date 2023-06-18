@@ -1,8 +1,0 @@
-- CRUD endpoints
-- Error handling
-- Validation
-- Versioning
-- OpenAPI documentation
-- Logging
-- Authorization + Caching
-- Unit tests

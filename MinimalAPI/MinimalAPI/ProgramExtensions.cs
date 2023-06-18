@@ -1,10 +1,12 @@
+using System.Reflection;
 using System.Text;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MinimalAPI.Persistence;
-using MinimalAPI.Swagger;
+using MinimalAPI.MinimalAPI.API.Swagger;
+using MinimalAPI.MinimalAPI.Persistence;
+using MinimalAPI.MinimalAPI.Persistence.Repositories;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MinimalAPI;
@@ -19,6 +21,8 @@ public static class ProgramExtensions
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
+        services.AddScoped<CustomerCommonRepository>();
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
         services.AddApiVersioning()
             .AddApiExplorer()

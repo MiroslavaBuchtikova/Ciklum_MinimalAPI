@@ -1,6 +1,6 @@
 using MinimalAPI;
-using MinimalAPI.Autoregistration;
-using MinimalAPI.Middlewares;
+using MinimalAPI.MinimalAPI.API.Endpoints.Autoregistration;
+using MinimalAPI.MinimalAPI.API.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
