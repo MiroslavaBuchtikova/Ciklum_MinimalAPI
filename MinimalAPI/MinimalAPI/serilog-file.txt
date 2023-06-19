@@ -1,0 +1,259 @@
+2023-06-19 14:45:08.064 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 14:45:08.276 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 14:45:08.513 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 14:45:08.517 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 14:45:08.518 +02:00 [INF] Hosting environment: Development
+2023-06-19 14:45:08.518 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 14:45:09.162 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 14:45:09.504 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 348.2378ms
+2023-06-19 14:45:09.516 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - -
+2023-06-19 14:45:09.592 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-06-19 14:45:09.598 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 82.0644ms
+2023-06-19 14:45:09.697 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 14:45:09.810 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST v1/customers" for actions - HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers => Update. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 14:45:09.849 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 151.8021ms
+2023-06-19 14:45:19.536 +02:00 [INF] Application is shutting down...
+2023-06-19 14:46:36.868 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 14:46:37.117 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 14:46:37.436 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 14:46:37.440 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 14:46:37.441 +02:00 [INF] Hosting environment: Development
+2023-06-19 14:46:37.441 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 14:46:38.134 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 14:46:38.627 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 497.7974ms
+2023-06-19 14:46:38.742 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 14:46:38.844 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST v1/customers" for actions - HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers => Update. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 14:46:38.875 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 132.6022ms
+2023-06-19 14:46:42.041 +02:00 [INF] Application is shutting down...
+2023-06-19 15:05:01.961 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:05:02.183 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:05:02.540 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:05:02.545 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:05:02.546 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:05:02.546 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:05:03.107 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:05:03.547 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 445.6342ms
+2023-06-19 15:05:03.668 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:05:03.765 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST v1/customers" for actions - HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers/ => Update,HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers/ => Update. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 15:05:03.802 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 133.9681ms
+2023-06-19 15:05:09.963 +02:00 [INF] Application is shutting down...
+2023-06-19 15:06:51.702 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:06:51.915 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:06:52.190 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:06:52.193 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:06:52.194 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:06:52.194 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:06:52.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:06:52.932 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 384.6380ms
+2023-06-19 15:06:53.063 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:06:53.135 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST v1/customers" for actions - HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers/ => Update,HTTP: POST /v1/customers => Create,HTTP: POST /v1/customers => Delete,HTTP: POST /v1/customers => Get,HTTP: POST /v1/customers => GetAll,HTTP: POST /v1/customers/ => Update. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 15:06:53.169 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 105.6477ms
+2023-06-19 15:11:21.583 +02:00 [INF] Application is shutting down...
+2023-06-19 15:11:28.550 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:11:28.770 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:11:29.074 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:11:29.077 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:11:29.079 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:11:29.079 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:11:29.645 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:11:30.094 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 450.4230ms
+2023-06-19 15:11:30.211 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:11:30.432 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 200 - application/json;charset=utf-8 221.1612ms
+2023-06-19 15:11:33.279 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - -
+2023-06-19 15:11:33.325 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - - - 200 - application/json;charset=utf-8 46.2444ms
+2023-06-19 15:11:38.745 +02:00 [INF] Application is shutting down...
+2023-06-19 15:12:09.766 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:12:09.993 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:12:10.370 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:12:10.375 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:12:10.375 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:12:10.375 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:12:11.062 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:12:11.547 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 485.8790ms
+2023-06-19 15:12:11.667 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:12:11.833 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "DELETE {version}/customers/{id}" for actions - HTTP: DELETE /{version}/customers/{id} => Delete,HTTP: DELETE /{version}/customers/{id} => Delete. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 15:12:11.868 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 201.0202ms
+2023-06-19 15:12:17.971 +02:00 [INF] Application is shutting down...
+2023-06-19 15:16:22.045 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:16:22.293 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:16:22.675 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:16:22.680 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:16:22.681 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:16:22.681 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:16:23.367 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:16:23.769 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 405.7795ms
+2023-06-19 15:16:23.892 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:16:24.085 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 200 - application/json;charset=utf-8 193.5135ms
+2023-06-19 15:16:25.893 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - -
+2023-06-19 15:16:25.991 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - - - 200 - application/json;charset=utf-8 99.0634ms
+2023-06-19 15:16:27.864 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:16:27.886 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 200 - application/json;charset=utf-8 21.3137ms
+2023-06-19 15:16:31.925 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - -
+2023-06-19 15:16:31.947 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/2.0/swagger.json - - - 200 - application/json;charset=utf-8 20.8296ms
+2023-06-19 15:16:35.010 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:16:35.031 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 200 - application/json;charset=utf-8 20.5713ms
+2023-06-19 15:19:41.325 +02:00 [INF] Application is shutting down...
+2023-06-19 15:22:15.938 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:22:16.156 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:22:16.525 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:22:16.530 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:22:16.531 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:22:16.532 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:22:17.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:22:18.078 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 683.5094ms
+2023-06-19 15:22:18.191 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - -
+2023-06-19 15:22:18.332 +02:00 [ERR] An unhandled exception has occurred.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "DELETE {Version}/customers/{id}" for actions - HTTP: DELETE /{Version}/customers/{id} => Delete,HTTP: DELETE /{Version}/customers/{id} => Delete. Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MinimalAPI.Application.Middlewares.CustomErrorHandlerMiddleware.InvokeAsync(HttpContext context) in /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/Middlewares/ErrorHandlingMiddleware.cs:line 24
+2023-06-19 15:22:18.363 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1.0/swagger.json - - - 500 - application/json 171.7456ms
+2023-06-19 15:23:57.253 +02:00 [INF] Application is shutting down...
+2023-06-19 15:25:40.812 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 15:25:41.030 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 15:25:41.402 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 15:25:41.406 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 15:25:41.407 +02:00 [INF] Hosting environment: Development
+2023-06-19 15:25:41.408 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 15:25:42.145 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 15:25:42.691 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 554.7827ms
+2023-06-19 15:25:42.814 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/0/swagger.json - -
+2023-06-19 15:25:42.998 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/0/swagger.json - - - 200 - application/json;charset=utf-8 183.3087ms
+2023-06-19 15:25:48.012 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 15:25:48.079 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 68.7747ms
+2023-06-19 15:25:59.654 +02:00 [INF] Application is shutting down...
+2023-06-19 16:28:26.764 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:33:18.985 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:34:39.887 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:35:19.914 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:35:58.707 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:36:13.734 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:36:26.427 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:36:26.705 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 16:36:27.128 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 16:36:27.133 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 16:36:27.133 +02:00 [INF] Hosting environment: Development
+2023-06-19 16:36:27.133 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 16:36:27.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 16:36:28.260 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 436.6243ms
+2023-06-19 16:36:28.280 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - -
+2023-06-19 16:36:28.352 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-06-19 16:36:28.357 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 77.1248ms
+2023-06-19 16:36:28.392 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 16:36:28.598 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 206.2489ms
+2023-06-19 16:36:47.499 +02:00 [INF] Application is shutting down...
+2023-06-19 16:44:42.101 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:51:53.975 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:52:54.033 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:54:56.513 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:56:29.103 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:58:06.872 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 16:58:07.150 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 16:58:07.587 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 16:58:07.592 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 16:58:07.593 +02:00 [INF] Hosting environment: Development
+2023-06-19 16:58:07.593 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 16:58:08.264 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 16:58:08.815 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 555.6764ms
+2023-06-19 16:58:08.941 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 16:58:09.130 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 188.7323ms
+2023-06-19 16:58:21.664 +02:00 [INF] Application is shutting down...
+2023-06-19 17:08:05.522 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:08:55.491 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:09:31.191 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:18:27.235 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:19:11.640 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:21:02.486 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:21:26.221 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:21:49.554 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:21:49.832 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 17:21:50.226 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 17:21:50.230 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 17:21:50.231 +02:00 [INF] Hosting environment: Development
+2023-06-19 17:21:50.231 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 17:21:50.940 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 17:21:51.537 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 604.3178ms
+2023-06-19 17:21:51.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 17:21:51.947 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 262.4685ms
+2023-06-19 17:21:52.209 +02:00 [INF] Application is shutting down...
+2023-06-19 17:24:15.036 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:27:07.493 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:28:14.854 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:28:15.203 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 17:28:15.613 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 17:28:15.617 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 17:28:15.618 +02:00 [INF] Hosting environment: Development
+2023-06-19 17:28:15.618 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 17:28:16.238 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 17:28:16.936 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 698.7595ms
+2023-06-19 17:28:17.056 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 17:28:17.267 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 210.6792ms
+2023-06-19 17:28:30.549 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/2/swagger.json - -
+2023-06-19 17:28:30.607 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/2/swagger.json - - - 200 - application/json;charset=utf-8 59.1284ms
+2023-06-19 17:28:41.259 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/v2/customers?api-version=2.0 application/json 79
+2023-06-19 17:28:41.323 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-06-19 17:28:41.334 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-06-19 17:28:41.335 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/v2/customers?api-version=2.0 application/json 79 - 401 0 - 76.1767ms
+2023-06-19 17:28:45.793 +02:00 [INF] Application is shutting down...
+2023-06-19 17:30:29.213 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:34:17.608 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:34:17.893 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 17:34:18.301 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 17:34:18.305 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 17:34:18.306 +02:00 [INF] Hosting environment: Development
+2023-06-19 17:34:18.306 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 17:34:19.220 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 17:34:19.699 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 487.2321ms
+2023-06-19 17:34:19.830 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 17:34:20.031 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 201.0070ms
+2023-06-19 17:34:32.742 +02:00 [INF] Application is shutting down...
+2023-06-19 17:58:16.998 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-19 17:58:17.305 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-19 17:58:17.740 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-19 17:58:17.745 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-19 17:58:17.745 +02:00 [INF] Hosting environment: Development
+2023-06-19 17:58:17.745 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI/MinimalAPI
+2023-06-19 17:58:18.619 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-19 17:58:18.990 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 374.2529ms
+2023-06-19 17:58:19.112 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - -
+2023-06-19 17:58:19.301 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/1/swagger.json - - - 200 - application/json;charset=utf-8 188.1728ms
+2023-06-19 17:58:30.291 +02:00 [INF] Application is shutting down...

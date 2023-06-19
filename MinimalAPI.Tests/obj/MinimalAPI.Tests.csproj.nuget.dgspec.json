@@ -1,0 +1,325 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Tests/MinimalAPI.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/MinimalAPI.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/MinimalAPI.Application.csproj",
+        "projectName": "MinimalAPI.Application",
+        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/MinimalAPI.Application.csproj",
+        "packagesPath": "/Users/buchtikova/.nuget/packages/",
+        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/buchtikova/RiderProjects/NuGet.Config",
+          "/Users/buchtikova/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bluestepbank.pkgs.visualstudio.com/_packaging/BluestepNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj": {
+                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Asp.Versioning.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj",
+        "projectName": "MinimalAPI.Core",
+        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj",
+        "packagesPath": "/Users/buchtikova/.nuget/packages/",
+        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/buchtikova/RiderProjects/NuGet.Config",
+          "/Users/buchtikova/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bluestepbank.pkgs.visualstudio.com/_packaging/BluestepNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj",
+        "projectName": "MinimalAPI.Persistence",
+        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj",
+        "packagesPath": "/Users/buchtikova/.nuget/packages/",
+        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/buchtikova/RiderProjects/NuGet.Config",
+          "/Users/buchtikova/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bluestepbank.pkgs.visualstudio.com/_packaging/BluestepNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj": {
+                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Tests/MinimalAPI.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Tests/MinimalAPI.Tests.csproj",
+        "projectName": "MinimalAPI.Tests",
+        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Tests/MinimalAPI.Tests.csproj",
+        "packagesPath": "/Users/buchtikova/.nuget/packages/",
+        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/buchtikova/RiderProjects/NuGet.Config",
+          "/Users/buchtikova/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://bluestepbank.pkgs.visualstudio.com/_packaging/BluestepNuget/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/MinimalAPI.Application.csproj": {
+                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Application/MinimalAPI.Application.csproj"
+              },
+              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj": {
+                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.10.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            },
+            "Microsoft.TestPlatform.TestHost": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

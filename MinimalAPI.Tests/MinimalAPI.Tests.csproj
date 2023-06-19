@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="6.10.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.3" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.1" />
+      <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.5.0" />
+      <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MinimalAPI.Application\MinimalAPI.Application.csproj" />
+      <ProjectReference Include="..\MinimalAPI.Persistence\MinimalAPI.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
