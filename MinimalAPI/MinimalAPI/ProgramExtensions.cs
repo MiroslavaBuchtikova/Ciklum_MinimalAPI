@@ -4,9 +4,9 @@ using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MinimalAPI.Application.Swagger;
 using MinimalAPI.Persistence;
 using MinimalAPI.Persistence.Repositories;
+using MinimalAPI.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MinimalAPI;
@@ -16,14 +16,13 @@ public static class ProgramExtensions
     public static void RegisterApplicationsServices(this IServiceCollection services,
         ConfigurationManager configuration)
     {
-        services.AddDbContext<CustomerDb>(opt => opt.UseInMemoryDatabase("CustomerList"));
+        services.AddDbContext<DatabaseContext>(opt => opt.UseInMemoryDatabase("CustomerList"));
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
-        services.AddScoped<Customer>();
-        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
+        services.AddScoped<CustomerRepository>();
+        
         services.AddApiVersioning()
             .AddApiExplorer()
             .EnableApiVersionBinding();
@@ -40,5 +39,6 @@ public static class ProgramExtensions
         });
         services.AddAuthorization();
         services.AddMemoryCache();
+        
     }
 }

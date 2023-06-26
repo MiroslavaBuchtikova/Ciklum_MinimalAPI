@@ -1,28 +1,49 @@
 using System.Net;
+using System.Net.Http.Json;
 using System.Text;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MinimalAPI.Application.Features.Customer.DomainModels;
+using MinimalAPI.Core.Entities;
+using MinimalAPI.Features.Customer.DTOs;
+using MinimalAPI.Persistence;
 using Newtonsoft.Json;
+using Customer = MinimalAPI.Core.Entities.Customer;
 
 namespace MinimalAPI.Tests.UseCases;
 
 [TestClass]
-public class When_Delete_Customer
+public class When_Delete_Customer : TestBase
 {
     [TestMethod]
     public async Task Then_Customer_Should_Have_Valid_Response()
     {
-        var client = new TestBase().CreateCustomerClient();
-        var res = await client.PostAsync("/v1/customers?api-version=1.0",
-            new StringContent(JsonConvert.SerializeObject(new Customer()
-                {
-                    FirstName = "test",
-                    LastName = "test",
-                    EmailAddress = "test@test.sk"
-                }), Encoding.Default,
-                "application/json"));
+        //Arrange
+        var id = ArrangeDbData();
+        
+        var client = CreateCustomerClient();
+        var response = await client.DeleteAsync($"/v1/customers/763bba5b-2f75-40b8-8b0b-2b43bd53f23f?api-version=1.0");
 
-        res.StatusCode.Should().Be(HttpStatusCode.Created);
+        response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+        var content = await response.Content.ReadFromJsonAsync<ResultDto>();
+        content.Should().Be(new ResultDto ( id ));
+    }
+
+    private Guid ArrangeDbData()
+    {
+        using (var context = GetDbContext(DbContextOptions))
+        {
+            var customer = context.Customers.Add(new Customer
+            {
+                Id = new Guid("763bba5b-2f75-40b8-8b0b-2b43bd53f23f"),
+                FirstName = "test",
+                LastName = "test",
+                EmailAddress = "test"
+            }).Entity;
+
+            context.SaveChanges();
+
+            return customer.Id;
+        }
     }
 }

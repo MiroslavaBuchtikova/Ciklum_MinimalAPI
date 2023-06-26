@@ -2,7 +2,7 @@ using System.Net;
 using System.Text;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MinimalAPI.Application.Features.Customer.DomainModels;
+using MinimalAPI.Features.Customer.DTOs;
 using Newtonsoft.Json;
 
 namespace MinimalAPI.Tests.UseCases;
@@ -14,13 +14,8 @@ public class When_Create_Customer
     public async Task Then_Customer_Should_Have_Valid_Response()
     {
         var client = new TestBase().CreateCustomerClient();
-        var res = await client.PostAsync("/v1/customers?api-version=1.0",
-            new StringContent(JsonConvert.SerializeObject(new Customer()
-                {
-                    FirstName = "test",
-                    LastName = "test",
-                    EmailAddress = "test@test.sk"
-                }), Encoding.Default,
+        var res = await client.PostAsync("/v1/customers",
+            new StringContent(JsonConvert.SerializeObject(new CustomerDto("test", "test", "test@test.sk")), Encoding.Default,
                 "application/json"));
 
         res.StatusCode.Should().Be(HttpStatusCode.Created);

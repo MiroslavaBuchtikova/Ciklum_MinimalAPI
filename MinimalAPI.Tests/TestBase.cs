@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -17,6 +18,15 @@ public class TestBase
 {
     private readonly WebApplicationFactory<Program> _server;
 
+
+    protected DbContextOptions DbContextOptions
+        = new DbContextOptionsBuilder<DatabaseContext>()
+            .UseInMemoryDatabase($"TestDb_{Guid.NewGuid()}")
+            .ConfigureWarnings(x =>
+            {
+                x.Ignore(InMemoryEventId.TransactionIgnoredWarning);
+                x.Ignore(CoreEventId.DetachedLazyLoadingWarning);
+            }).Options;
     public TestBase()
     {
         _server = new WebApplicationFactory<Program>()
@@ -25,17 +35,16 @@ public class TestBase
                 builder.UseEnvironment("Testing");
                 builder.ConfigureTestServices(services =>
                 {
-                    services.AddSingleton(_ =>
-                    {
-                        var dbContextOptions = new DbContextOptionsBuilder<CustomerDb>()
-                            .UseInMemoryDatabase($"CustomerDb_Test{Guid.NewGuid()}").Options;
-                        var dbContext = new CustomerDb(dbContextOptions);
-                        return dbContext;
-                    });
+                    services.AddSingleton(GetDbContext(DbContextOptions));
 
                     services.BuildServiceProvider();
                 });
             });
+    }
+    
+    public DatabaseContext GetDbContext(DbContextOptions options)
+    {
+        return new DatabaseContext(options);
     }
 
 
@@ -64,4 +73,5 @@ public class TestBase
             new AuthenticationHeaderValue("Bearer", GetMockedJwtTokenString());
         return client;
     }
+
 }

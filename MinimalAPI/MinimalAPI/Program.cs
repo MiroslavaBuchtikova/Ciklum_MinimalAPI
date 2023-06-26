@@ -1,6 +1,7 @@
+using System.Reflection;
 using MinimalAPI;
-using MinimalAPI.Application.ApiAutoregistration;
-using MinimalAPI.Application.Middlewares;
+using MinimalAPI.ApiAutoregistration;
+using MinimalAPI.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,8 @@ builder.Host.UseSerilog((hostContext, services, configuration) =>
         .WriteTo.File("serilog-file.txt")
         .WriteTo.Console();
 });
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 var app = builder.Build();
 
@@ -42,3 +45,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.Run();
+
+public partial class Program
+{
+}
