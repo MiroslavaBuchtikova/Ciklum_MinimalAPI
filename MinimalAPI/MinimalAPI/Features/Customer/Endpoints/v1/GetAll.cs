@@ -1,4 +1,3 @@
-using Asp.Versioning.Builder;
 using AutoMapper;
 using MediatR;
 using MinimalAPI.ApiAutoregistration;
@@ -6,25 +5,21 @@ using MinimalAPI.Features.Customer.SwaggerDocumentation;
 
 namespace MinimalAPI.Features.Customer.Endpoints.v1;
 
-public class GetAllCustomers : BaseApiRoute
+public class GetAllCustomers : IApiRoute
 {
-    protected override string RouteName => "Customers";
-    
-    protected override string Version => "v1";
-    protected override int ApiVersion => 1;
-    protected override bool RequireAuthorization => true;
-    
-    protected override void MapEndpoints(IVersionedEndpointRouteBuilder routeBuilder)
+    public void MapEndpoint(IEndpointRouteBuilder builder)
     {
-        routeBuilder.MapGet($"{Version}/customers", GetAll)
+        builder.MapGet($"{EndpointConfiguration.BaseApiPath}/customers", GetAll)
+
+            .RequireAuthorization()
+            .WithApiVersionSet(builder.NewApiVersionSet("Customers").Build())
+            .HasApiVersion(1.0)
             .WithOpenApi(GetCustomersConfiguration.ConfigureOpenApiOperation);
     }
     private async Task<List<DTOs.CustomerDto>> GetAll(Persistence.Repositories.CustomerRepository customerRepository, IMapper mapper, IMediator mediator)
     {
         var query = new Queries.GetAll();
-        var result = await mediator.Send(query);
-
-        return result;
+       return await mediator.Send(query);
     }
 
  

@@ -1,4 +1,3 @@
-using System.Reflection;
 using System.Text;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
@@ -23,9 +22,7 @@ public static class ProgramExtensions
         services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
         services.AddScoped<CustomerRepository>();
         
-        services.AddApiVersioning()
-            .AddApiExplorer()
-            .EnableApiVersionBinding();
+        services.AddCustomVersioning();
         services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
         services.AddAuthentication().AddJwtBearer(o =>
         {

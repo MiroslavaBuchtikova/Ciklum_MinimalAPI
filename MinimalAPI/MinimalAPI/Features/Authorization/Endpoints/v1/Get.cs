@@ -1,25 +1,18 @@
-using Asp.Versioning.Builder;
 using MediatR;
 using MinimalAPI.ApiAutoregistration;
 using MinimalAPI.Features.Authorization.SwaggerDocumentation;
 
 namespace MinimalAPI.Features.Authorization.Endpoints.v1;
 
-public class Get : BaseApiRoute
+public class Get : IApiRoute
 {
-    protected override string RouteName => "Security";
-    protected override string Version => "v1";
-
-    protected override int ApiVersion => 1;
-    protected override bool RequireAuthorization => false;
-
-
-    protected override void MapEndpoints(IVersionedEndpointRouteBuilder routeBuilder)
+    public void MapEndpoint(IEndpointRouteBuilder builder)
     {
-        routeBuilder.MapPost($"{Version}/security/getToken", GetAuthToken)
+        builder.MapPost($"{EndpointConfiguration.BaseApiPath}/security/getToken", GetAuthToken)
+            .WithApiVersionSet(builder.NewApiVersionSet("Authentication").Build())
+            .HasApiVersion(1.0)
             .WithOpenApi(GetAuthorizationTokenConfiguration.ConfigureOpenApiOperation);
     }
-
 
     private static async Task<IResult> GetAuthToken(IMediator mediator)
     {
@@ -28,6 +21,4 @@ public class Get : BaseApiRoute
 
         return Results.Ok(jwtToken);
     }
-
-    
 }

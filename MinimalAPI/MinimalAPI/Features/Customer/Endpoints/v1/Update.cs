@@ -1,4 +1,3 @@
-using Asp.Versioning.Builder;
 using AutoMapper;
 using MediatR;
 using MinimalAPI.ApiAutoregistration;
@@ -7,16 +6,14 @@ using MinimalAPI.Features.Customer.SwaggerDocumentation;
 
 namespace MinimalAPI.Features.Customer.Endpoints.v1;
 
-public class UpdateCustomer : BaseApiRoute
+public class UpdateCustomer : IApiRoute
 {
-    protected override string RouteName => "Customers";
-    protected override string Version => "v1";
-    protected override int ApiVersion => (int)1.0;
-    protected override bool RequireAuthorization => true;
-
-    protected override void MapEndpoints(IVersionedEndpointRouteBuilder routeBuilder)
+    public void MapEndpoint(IEndpointRouteBuilder builder)
     {
-        routeBuilder.MapPut($"{Version}/customers/{{id}}", Update)
+        builder.MapPut($"{EndpointConfiguration.BaseApiPath}/customers/{{id}}", Update)
+            .RequireAuthorization()
+            .WithApiVersionSet(builder.NewApiVersionSet("Customers").Build())
+            .HasApiVersion(1.0)
             .WithOpenApi(UpdateCustomerConfiguration.ConfigureOpenApiOperation);
     }
 

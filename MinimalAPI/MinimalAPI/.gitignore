@@ -3,3 +3,9 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+../../Ciklum_MinimalAPI/MinimalAPI.Tests/bin/
+../../Ciklum_MinimalAPI/MinimalAPI.Tests/obj/
+../../Ciklum_MinimalAPI/MinimalAPI.Persistence/bin/
+../../Ciklum_MinimalAPI/MinimalAPI.Persistence/obj/
+../../Ciklum_MinimalAPI/MinimalAPI.Core/bin/
+../../Ciklum_MinimalAPI/MinimalAPI.Core/obj/

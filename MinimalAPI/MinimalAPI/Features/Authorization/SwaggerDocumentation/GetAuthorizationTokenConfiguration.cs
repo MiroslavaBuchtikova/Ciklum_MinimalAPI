@@ -11,18 +11,7 @@ public static class GetAuthorizationTokenConfiguration
         operation.OperationId = "Get Authorization Token";
         operation.Summary = "Get Authorization Token summary";
         operation.Description = "Get authorization token description";
-        operation.Tags = new List<OpenApiTag> { new() { Name = "Get authorization token" } };
-        var versionParameter = new OpenApiParameter
-        {
-            Name = "api-version",
-            In = ParameterLocation.Query,
-            Required = true,
-            Schema = new OpenApiSchema
-            {
-                Type = "String"
-            }
-        };
-        operation.Parameters.Add(versionParameter);
+  
 
         operation.Responses = ResponseInfo.GetResponsesInfo();
 

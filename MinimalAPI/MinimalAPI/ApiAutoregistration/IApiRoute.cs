@@ -2,5 +2,5 @@ namespace MinimalAPI.ApiAutoregistration;
 
 public interface IApiRoute
 {
-    void Register(WebApplication group);
+    void MapEndpoint(IEndpointRouteBuilder builder);
 }

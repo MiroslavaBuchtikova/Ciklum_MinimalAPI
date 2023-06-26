@@ -11,7 +11,7 @@ public static class WebApplicationExtensions
         foreach (var routeType in routeTypes)
         {
             var route = Activator.CreateInstance(routeType) as IApiRoute;
-            route.Register(app); 
+            route.MapEndpoint(app); 
         }
     }
 
