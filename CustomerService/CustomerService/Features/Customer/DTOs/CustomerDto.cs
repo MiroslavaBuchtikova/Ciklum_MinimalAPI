@@ -1,4 +1,4 @@
-namespace MinimalAPI.Features.Customer.DTOs;
+namespace CustomerService.Features.Customer.DTOs;
 
 public record CustomerDto(
     string FirstName,

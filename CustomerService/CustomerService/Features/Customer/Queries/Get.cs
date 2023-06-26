@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace MinimalAPI.Features.Customer.Queries;
+namespace CustomerService.Features.Customer.Queries;
 
 public class Get : IRequest<DTOs.CustomerDto>
 {

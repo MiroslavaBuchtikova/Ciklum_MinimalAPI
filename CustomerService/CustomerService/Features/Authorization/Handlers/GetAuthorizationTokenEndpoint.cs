@@ -4,20 +4,20 @@ using MediatR;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MinimalAPI.Features.Authorization.Handlers;
+namespace CustomerService.Features.Authorization.Handlers;
 
-public class Get : IRequestHandler<Authorization.Queries.Get, string>
+public class GetAuthorizationTokenEndpoint : IRequestHandler<Authorization.Queries.GetAuthorizationTokenQuery, string>
 {
     private readonly IMemoryCache _cache;
     private readonly IConfiguration _configuration;
 
-    public Get(IMemoryCache cache, IConfiguration configuration)
+    public GetAuthorizationTokenEndpoint(IMemoryCache cache, IConfiguration configuration)
     {
         _cache = cache;
         _configuration = configuration;
     }
 
-    public async Task<string> Handle(Authorization.Queries.Get request, CancellationToken cancellationToken)
+    public async Task<string> Handle(Authorization.Queries.GetAuthorizationTokenQuery request, CancellationToken cancellationToken)
     {
         var cacheKey = "auth_token";
 

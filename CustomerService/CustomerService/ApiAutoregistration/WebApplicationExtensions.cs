@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace MinimalAPI.ApiAutoregistration;
+namespace CustomerService.ApiAutoregistration;
 
 public static class WebApplicationExtensions
 {

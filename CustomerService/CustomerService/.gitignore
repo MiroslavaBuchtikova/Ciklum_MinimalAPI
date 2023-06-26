@@ -6,6 +6,6 @@ riderModule.iml
 ../../Ciklum_MinimalAPI/CustomerService.Tests/bin/
 ../../Ciklum_MinimalAPI/CustomerService.Tests/obj/
 ../../Ciklum_MinimalAPI/CustomerService.Persistence/bin/
-../../Ciklum_MinimalAPI/MinimalAPI.Persistence/obj/
+../../Ciklum_MinimalAPI/CustomerService.Persistence/obj/
 ../../Ciklum_MinimalAPI/CustomerService.Core/bin/
 ../../Ciklum_MinimalAPI/CustomerService.Core/obj/

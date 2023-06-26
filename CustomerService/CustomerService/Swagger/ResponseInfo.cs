@@ -1,6 +1,6 @@
 using Microsoft.OpenApi.Models;
 
-namespace MinimalAPI.Swagger;
+namespace CustomerService.Swagger;
 
 public static class ResponseInfo
 {

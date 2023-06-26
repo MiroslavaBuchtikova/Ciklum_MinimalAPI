@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace MinimalAPI.Validators;
+namespace CustomerService.Validators;
 
 public class Customer : AbstractValidator<Features.Customer.DTOs.CustomerDto>
 {

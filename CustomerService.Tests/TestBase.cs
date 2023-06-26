@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Headers;
 using System.Text;
+using CustomerService.Core.Entities;
 using CustomerService.Persistence;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -10,9 +11,8 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 
-namespace MinimalAPI.Tests;
+namespace CustomerService.Tests;
 
 public class TestBase
 {
@@ -72,6 +72,24 @@ public class TestBase
         client.DefaultRequestHeaders.Authorization =
             new AuthenticationHeaderValue("Bearer", GetMockedJwtTokenString());
         return client;
+    }
+
+    protected CustomerEntity ArrangeDbData()
+    {
+        using (var context = GetDbContext(DbContextOptions))
+        {
+            var customer = context.Customers.Add(new CustomerEntity
+            {
+                Id = Guid.NewGuid(),
+                FirstName = "test",
+                LastName = "test",
+                EmailAddress = "test"
+            }).Entity;
+
+            context.SaveChanges();
+
+            return customer;
+        }
     }
 
 }

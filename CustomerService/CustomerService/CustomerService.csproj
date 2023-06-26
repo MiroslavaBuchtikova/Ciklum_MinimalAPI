@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>MinimalAPI</RootNamespace>
+        <RootNamespace>CustomerService</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Asp.Versioning.Http" Version="7.0.0" />
@@ -33,6 +33,5 @@
     <ItemGroup>
       <ProjectReference Include="..\..\CustomerService.Core\CustomerService.Core.csproj" />
       <ProjectReference Include="..\..\CustomerService.Persistence\CustomerService.Persistence.csproj" />
-      <ProjectReference Include="..\..\MinimalAPI.Persistence\MinimalAPI.Persistence.csproj" />
     </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PreserveCompilationContext>true</PreserveCompilationContext>
-        <RootNamespace>MinimalAPI.Tests</RootNamespace>
+        <RootNamespace>CustomerService.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,8 +24,6 @@
     <ItemGroup>
       <ProjectReference Include="..\CustomerService.Persistence\CustomerService.Persistence.csproj" />
       <ProjectReference Include="..\CustomerService\CustomerService\CustomerService.csproj" />
-      <ProjectReference Include="..\MinimalAPI.Persistence\MinimalAPI.Persistence.csproj" />
-      <ProjectReference Include="..\MinimalAPI\CustomerService\CustomerService.csproj" />
     </ItemGroup>
 
 </Project>

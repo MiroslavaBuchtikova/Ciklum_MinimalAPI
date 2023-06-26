@@ -1,14 +1,14 @@
 using System.Text;
 using CustomerService.Persistence;
 using CustomerService.Persistence.Repositories;
+using CustomerService.Swagger;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MinimalAPI.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace MinimalAPI;
+namespace CustomerService;
 
 public static class ProgramExtensions
 {
@@ -18,7 +18,10 @@ public static class ProgramExtensions
         services.AddDbContext<DatabaseContext>(opt => opt.UseInMemoryDatabase("CustomerList"));
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+       services.AddSwaggerGen(options =>
+       {
+             options.CustomSchemaIds(type => type.ToString());
+       });
         services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
         services.AddScoped<CustomerRepository>();
         

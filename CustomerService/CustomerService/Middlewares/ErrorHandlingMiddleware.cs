@@ -1,8 +1,8 @@
 using System.Net;
 using System.Text.Json;
-using MinimalAPI.Core.Exceptions;
+using CustomerService.Core.Exceptions;
 
-namespace MinimalAPI.Middlewares;
+namespace CustomerService.Middlewares;
 
 public class CustomErrorHandlerMiddleware
 {

@@ -1,4 +1,4 @@
-namespace MinimalAPI.ApiAutoregistration;
+namespace CustomerService.ApiAutoregistration;
 
 public interface IApiRoute
 {

@@ -1,12 +1,12 @@
+using CustomerService.ApiAutoregistration;
+using CustomerService.Features.Customer.Commands;
+using CustomerService.Features.Customer.DTOs;
+using CustomerService.Features.Customer.SwaggerDocumentation;
 using MediatR;
-using MinimalAPI.ApiAutoregistration;
-using MinimalAPI.Features.Customer.Commands;
-using MinimalAPI.Features.Customer.DTOs;
-using MinimalAPI.Features.Customer.SwaggerDocumentation;
 
-namespace MinimalAPI.Features.Customer.Endpoints.v1;
+namespace CustomerService.Features.Customer.Endpoints;
 
-public class CreateCustomer : IApiRoute
+public class CreateCustomerEndpoint : IApiRoute
 {
     public void MapEndpoint(IEndpointRouteBuilder builder)
     {
@@ -17,7 +17,7 @@ public class CreateCustomer : IApiRoute
             .WithOpenApi(CreateCustomerConfiguration.ConfigureOpenApiOperation);
     }
 
-    private async Task<ResultDto> Create(DTOs.CustomerDto customerDto, IMediator mediator)
+    private async Task<ResultDto> Create(CustomerDto customerDto, IMediator mediator)
     {
         var request = new CreateCustomerCommand(customerDto);
         return await mediator.Send(request);

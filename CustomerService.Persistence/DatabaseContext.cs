@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MinimalAPI.Core.Entities;
+using CustomerService.Core.Entities;
 
 namespace CustomerService.Persistence;
 
@@ -9,5 +9,5 @@ public class DatabaseContext : DbContext
     {
     }
 
-    public DbSet<Customer> Customers => Set<Customer>();
+    public DbSet<CustomerEntity> Customers => Set<CustomerEntity>();
 }

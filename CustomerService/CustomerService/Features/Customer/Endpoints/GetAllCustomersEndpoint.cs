@@ -1,12 +1,12 @@
 using AutoMapper;
+using CustomerService.ApiAutoregistration;
+using CustomerService.Features.Customer.SwaggerDocumentation;
 using CustomerService.Persistence.Repositories;
 using MediatR;
-using MinimalAPI.ApiAutoregistration;
-using MinimalAPI.Features.Customer.SwaggerDocumentation;
 
-namespace MinimalAPI.Features.Customer.Endpoints.v1;
+namespace CustomerService.Features.Customer.Endpoints;
 
-public class GetAllCustomers : IApiRoute
+public class GetAllCustomersEndpoint : IApiRoute
 {
     public void MapEndpoint(IEndpointRouteBuilder builder)
     {
@@ -15,6 +15,7 @@ public class GetAllCustomers : IApiRoute
             .RequireAuthorization()
             .WithApiVersionSet(builder.NewApiVersionSet("Customers").Build())
             .HasApiVersion(1.0)
+            .HasApiVersion(2.0)
             .WithOpenApi(GetCustomersConfiguration.ConfigureOpenApiOperation);
     }
     private async Task<List<DTOs.CustomerDto>> GetAll(CustomerRepository customerRepository, IMapper mapper, IMediator mediator)

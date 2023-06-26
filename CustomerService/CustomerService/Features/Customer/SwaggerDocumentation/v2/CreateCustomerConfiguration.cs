@@ -1,9 +1,10 @@
 using System.Text.Json;
+using CustomerService.Features.Customer.DTOs.v2;
 using CustomerService.Swagger;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 
-namespace CustomerService.Features.Customer.SwaggerDocumentation
+namespace CustomerService.Features.Customer.SwaggerDocumentation.v2
 {
     public static class CreateCustomerConfiguration
     {
@@ -18,7 +19,7 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
             var openApiRequestBody = operation.RequestBody;
             openApiRequestBody.Description = "Request body description";
             openApiRequestBody.Content["application/json"].Example = new OpenApiString(
-                JsonSerializer.Serialize(new DTOs.CustomerDto("FirstName", "LastName", "EmailAddress")));
+                JsonSerializer.Serialize(new CustomerDto("FirstName", "LastName", "EmailAddress", Gender.Unknown)));
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();

@@ -1,4 +1,4 @@
-namespace MinimalAPI.Core.Exceptions
+namespace CustomerService.Core.Exceptions
 {
     public class InvalidEmailException : Exception
     {

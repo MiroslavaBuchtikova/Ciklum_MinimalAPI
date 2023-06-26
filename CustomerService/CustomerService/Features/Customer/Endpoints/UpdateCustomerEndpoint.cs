@@ -1,13 +1,13 @@
 using AutoMapper;
+using CustomerService.ApiAutoregistration;
+using CustomerService.Features.Customer.DTOs;
+using CustomerService.Features.Customer.SwaggerDocumentation;
 using CustomerService.Persistence.Repositories;
 using MediatR;
-using MinimalAPI.ApiAutoregistration;
-using MinimalAPI.Features.Customer.DTOs;
-using MinimalAPI.Features.Customer.SwaggerDocumentation;
 
-namespace MinimalAPI.Features.Customer.Endpoints.v1;
+namespace CustomerService.Features.Customer.Endpoints;
 
-public class UpdateCustomer : IApiRoute
+public class UpdateCustomerEndpoint : IApiRoute
 {
     public void MapEndpoint(IEndpointRouteBuilder builder)
     {
@@ -15,6 +15,7 @@ public class UpdateCustomer : IApiRoute
             .RequireAuthorization()
             .WithApiVersionSet(builder.NewApiVersionSet("Customers").Build())
             .HasApiVersion(1.0)
+            .HasApiVersion(2.0)
             .WithOpenApi(UpdateCustomerConfiguration.ConfigureOpenApiOperation);
     }
 

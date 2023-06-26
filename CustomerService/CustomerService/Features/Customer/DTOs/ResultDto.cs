@@ -1,3 +1,3 @@
-namespace MinimalAPI.Features.Customer.DTOs;
+namespace CustomerService.Features.Customer.DTOs;
 
 public record ResultDto (Guid Id);

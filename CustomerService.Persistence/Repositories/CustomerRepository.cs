@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using MinimalAPI.Core.Entities;
+using CustomerService.Core.Entities;
 
 namespace CustomerService.Persistence.Repositories;
 
-public class CustomerRepository : IRepository<Customer>
+public class CustomerRepository : IRepository<CustomerEntity>
 {
     private readonly DatabaseContext _dbContext;
 
@@ -12,31 +12,31 @@ public class CustomerRepository : IRepository<Customer>
         _dbContext = dbContext;
     }
 
-    public async Task<MinimalAPI.Core.Entities.Customer?> GetById(Guid id)
+    public async Task<CustomerService.Core.Entities.CustomerEntity?> GetById(Guid id)
     {
         return await _dbContext.Customers.FindAsync(id) ?? null;
     }
 
-    public async Task<List<MinimalAPI.Core.Entities.Customer>> GetAll()
+    public async Task<List<CustomerService.Core.Entities.CustomerEntity>> GetAll()
     {
         return await _dbContext.Customers.ToListAsync();
     }
 
-    public async Task Add(MinimalAPI.Core.Entities.Customer customer)
+    public async Task Add(CustomerService.Core.Entities.CustomerEntity customerEntity)
     {
-        _dbContext.Customers.Add(customer);
+        _dbContext.Customers.Add(customerEntity);
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task Update(MinimalAPI.Core.Entities.Customer customer)
+    public async Task Update(CustomerService.Core.Entities.CustomerEntity customerEntity)
     {
-        _dbContext.Customers.Update(customer);
+        _dbContext.Customers.Update(customerEntity);
         await _dbContext.SaveChangesAsync();
     }
 
-    public async Task Delete(MinimalAPI.Core.Entities.Customer customer)
+    public async Task Delete(CustomerService.Core.Entities.CustomerEntity customerEntity)
     {
-        _dbContext.Customers.Remove(customer);
+        _dbContext.Customers.Remove(customerEntity);
         await _dbContext.SaveChangesAsync();
     }
 }

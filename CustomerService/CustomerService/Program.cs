@@ -1,7 +1,7 @@
 using System.Reflection;
-using MinimalAPI;
-using MinimalAPI.ApiAutoregistration;
-using MinimalAPI.Middlewares;
+using CustomerService;
+using CustomerService.ApiAutoregistration;
+using CustomerService.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.RegisterApplicationsServices(builder.Configuration);
 
 
-builder.Host.UseSerilog((hostContext, services, configuration) =>
+builder.Host.UseSerilog((_, _, configuration) =>
 {
     configuration
         .WriteTo.File("serilog-file.txt")
@@ -46,6 +46,9 @@ if (app.Environment.IsDevelopment())
 
 app.Run();
 
-public partial class Program
+namespace CustomerService
 {
+    public abstract class Program
+    {
+    }
 }

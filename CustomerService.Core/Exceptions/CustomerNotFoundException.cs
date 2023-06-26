@@ -1,8 +1,8 @@
-namespace MinimalAPI.Core.Exceptions
+namespace CustomerService.Core.Exceptions
 {
     public class CustomerNotFoundException : Exception
     {
-        public CustomerNotFoundException(string message = "Customer not found") : base(message)
+        public CustomerNotFoundException(string message = "CustomerEntity not found") : base(message)
         {
         }
     }

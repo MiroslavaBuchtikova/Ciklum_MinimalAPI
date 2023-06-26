@@ -2,7 +2,7 @@ using System.Net;
 using System.Reflection;
 using FluentValidation;
 
-namespace MinimalAPI.Filters;
+namespace CustomerService.Filters;
 
 public static class ValidationFilter
 {

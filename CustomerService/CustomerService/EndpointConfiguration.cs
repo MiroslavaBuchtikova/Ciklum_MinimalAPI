@@ -1,6 +1,6 @@
 using Asp.Versioning.Builder;
 
-namespace MinimalAPI;
+namespace CustomerService;
 
 public class EndpointConfiguration
 {

@@ -1,18 +1,18 @@
 using AutoMapper;
+using CustomerService.Core.Exceptions;
+using CustomerService.Features.Customer.DTOs;
 using CustomerService.Persistence.Repositories;
 using MediatR;
-using MinimalAPI.Core.Exceptions;
-using MinimalAPI.Features.Customer.DTOs;
 
-namespace MinimalAPI.Features.Customer.Handlers;
+namespace CustomerService.Features.Customer.Handlers;
 
-public class Update : IRequestHandler<Commands.UpdateCustomerCommand, ResultDto
+public class UpdateCustomerHandler : IRequestHandler<Commands.UpdateCustomerCommand, ResultDto
 >
 {
     private readonly CustomerRepository _customerRepositoryRepository;
     private readonly IMapper _mapper;
 
-    public Update(CustomerRepository customerRepositoryRepository, IMapper mapper)
+    public UpdateCustomerHandler(CustomerRepository customerRepositoryRepository, IMapper mapper)
     {
         _customerRepositoryRepository = customerRepositoryRepository;
         _mapper = mapper;
