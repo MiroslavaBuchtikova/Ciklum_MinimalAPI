@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+        <RootNamespace>MinimalAPI.Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="6.10.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.8" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.3" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.1" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.2" />
+      <PackageReference Include="Microsoft.TestPlatform.TestHost" Version="17.6.2" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.1" />
+        <PackageReference Include="MSTest.TestAdapter" Version="3.0.4" />
+        <PackageReference Include="MSTest.TestFramework" Version="3.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CustomerService.Persistence\CustomerService.Persistence.csproj" />
+      <ProjectReference Include="..\CustomerService\CustomerService\CustomerService.csproj" />
+      <ProjectReference Include="..\MinimalAPI.Persistence\MinimalAPI.Persistence.csproj" />
+      <ProjectReference Include="..\MinimalAPI\CustomerService\CustomerService.csproj" />
+    </ItemGroup>
+
+</Project>

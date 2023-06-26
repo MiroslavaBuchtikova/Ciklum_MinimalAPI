@@ -198,14 +198,14 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MinimalAPI.Core/1.0.0": {
+      "CustomerService.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/MinimalAPI.Core.dll": {}
+          "bin/placeholder/CustomerService.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MinimalAPI.Core.dll": {}
+          "bin/placeholder/CustomerService.Core.dll": {}
         }
       }
     }
@@ -521,16 +521,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MinimalAPI.Core/1.0.0": {
+    "CustomerService.Core/1.0.0": {
       "type": "project",
-      "path": "../MinimalAPI.Core/MinimalAPI.Core.csproj",
-      "msbuildProject": "../MinimalAPI.Core/MinimalAPI.Core.csproj"
+      "path": "../CustomerService.Core/CustomerService.Core.csproj",
+      "msbuildProject": "../CustomerService.Core/CustomerService.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.EntityFrameworkCore >= 7.0.3",
-      "MinimalAPI.Core >= 1.0.0"
+      "CustomerService.Core >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 7.0.3"
     ]
   },
   "packageFolders": {
@@ -560,8 +560,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj": {
-              "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj"
+            "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj": {
+              "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj"
             }
           }
         }

@@ -1,0 +1,12 @@
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/bin/Debug/net7.0/CustomerService.Core.deps.json
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/bin/Debug/net7.0/CustomerService.Core.dll
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/bin/Debug/net7.0/CustomerService.Core.pdb
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.csproj.AssemblyReference.cache
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.AssemblyInfoInputs.cache
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.AssemblyInfo.cs
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.csproj.CoreCompileInputs.cache
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.dll
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/refint/CustomerService.Core.dll
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/CustomerService.Core.pdb
+/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/Debug/net7.0/ref/CustomerService.Core.dll

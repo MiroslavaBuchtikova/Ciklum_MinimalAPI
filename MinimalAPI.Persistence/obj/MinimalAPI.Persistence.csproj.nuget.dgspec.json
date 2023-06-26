@@ -4,14 +4,14 @@
     "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Persistence/MinimalAPI.Persistence.csproj": {}
   },
   "projects": {
-    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj": {
+    "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj",
-        "projectName": "MinimalAPI.Core",
-        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj",
+        "projectUniqueName": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj",
+        "projectName": "CustomerService.Core",
+        "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj",
         "packagesPath": "/Users/buchtikova/.nuget/packages/",
-        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/obj/",
+        "outputPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/buchtikova/RiderProjects/NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj": {
-                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/MinimalAPI.Core/MinimalAPI.Core.csproj"
+              "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj": {
+                "projectPath": "/Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService.Core/CustomerService.Core.csproj"
               }
             }
           }
