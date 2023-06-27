@@ -54,11 +54,11 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
 
     private static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
     {
-        var text = new StringBuilder("CustomerDto service");
+        var text = new StringBuilder("Customer service");
         var info = new OpenApiInfo()
         {
-            Description = "This is implementation of customerDto service",
-            Title = "CustomerDto service",
+            Description = "This is an implementation of the customer service API, which provides functionality for managing customer data.",
+            Title = "Customer Service API",
             Version = description.ApiVersion.ToString(),
             Contact = new OpenApiContact() { Name = "Miroslava Buchtikova", Url = new Uri("https://demo.com") },
             License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }

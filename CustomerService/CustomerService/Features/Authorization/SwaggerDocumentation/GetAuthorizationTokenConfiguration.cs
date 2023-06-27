@@ -9,9 +9,9 @@ namespace CustomerService.Features.Authorization.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "GetCustomerHandler Authorization Token";
-            operation.Summary = "GetCustomerHandler Authorization Token summary";
-            operation.Description = "GetCustomerHandler authorization token description";
+            operation.OperationId = "Authorization Token";
+            operation.Summary = "Authorization Token summary";
+            operation.Description = "authorization token description";
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();

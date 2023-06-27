@@ -11,9 +11,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "GetCustomerHandler Customers";
-            operation.Summary = "GetCustomerHandler customers summary";
-            operation.Description = "GetCustomerHandler Customers description";
+            operation.OperationId = "GetCustomer Customers";
+            operation.Summary = "GetCustomer customers summary";
+            operation.Description = "GetCustomer Customers description";
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();

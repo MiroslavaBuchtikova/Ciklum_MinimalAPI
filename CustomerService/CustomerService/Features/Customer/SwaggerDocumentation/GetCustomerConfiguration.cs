@@ -10,9 +10,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "GetCustomerHandler CustomerDto";
-            operation.Summary = "GetCustomerHandler customerDto summary";
-            operation.Description = "GetCustomerHandler CustomerDto description";
+            operation.OperationId = "GetCustomer CustomerDto";
+            operation.Summary = "GetCustomer customerDto summary";
+            operation.Description = "GetCustomer CustomerDto description";
 
             // Configure the request parameter
             var openApiRequestBody = operation.Parameters[0];

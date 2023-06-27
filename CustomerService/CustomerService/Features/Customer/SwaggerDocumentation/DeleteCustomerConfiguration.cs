@@ -9,9 +9,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "DeleteCustomerHandler customer";
-            operation.Summary = "DeleteCustomerHandler customer summary";
-            operation.Description = "DeleteCustomerHandler customer description";
+            operation.OperationId = "DeleteCustomer customer";
+            operation.Summary = "DeleteCustomer customer summary";
+            operation.Description = "DeleteCustomer customer description";
 
             // Configure the request parameter
             var openApiRequestBody = operation.Parameters[0];
