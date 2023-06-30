@@ -4,7 +4,6 @@ using CustomerService.Features.Customer.DTOs.v2;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
-using CustomerDto = CustomerService.Features.Customer.DTOs.v2.CustomerDto;
 
 namespace CustomerService.Tests.IntegrationTests.v2;
 
@@ -19,7 +18,7 @@ public class When_Create_Customer : TestBase
         
         //Act
         var res = await client.PostAsync("/api/v2/customers",
-            new StringContent(JsonConvert.SerializeObject(new CustomerDto("test", "test", "test@test.sk", Gender.Male)), Encoding.Default,
+            new StringContent(JsonConvert.SerializeObject(new CustomerRequestDto("test", "test", "test@test.sk", Gender.Male)), Encoding.Default,
                 "application/json"));
 
         //Assert

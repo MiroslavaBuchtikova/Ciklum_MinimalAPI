@@ -16,7 +16,7 @@ public class When_Update_Customer : TestBase
     {
         //Arrange
         var customer = ArrangeDbData();
-        var updatedCustomerDto = new CustomerDto("firstname_updated", "lastname_updated", "email@email_updated.sk");
+        var updatedCustomerDto = new CustomerResponseDto(Guid.NewGuid(),"firstname_updated", "lastname_updated", "email@email_updated.sk");
 
         //Act
         var client = CreateCustomerClient();

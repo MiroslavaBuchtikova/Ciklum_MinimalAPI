@@ -20,9 +20,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
             operation.Responses["200"].Content["application/json"] = new OpenApiMediaType()
             {
                 Example = new OpenApiString(
-                    JsonSerializer.Serialize(new List<DTOs.CustomerDto>()
+                    JsonSerializer.Serialize(new List<DTOs.CustomerResponseDto>()
                     {
-                        new CustomerDto("Firstname", "Lastname", "EmailAddress")
+                        new(Guid.NewGuid(),"Firstname", "Lastname", "EmailAddress")
                     }))
             };
 

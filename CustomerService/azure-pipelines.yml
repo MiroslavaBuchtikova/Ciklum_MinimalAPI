@@ -1,0 +1,73 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+- develop
+
+pool: "Default"
+
+variables:
+  solution: "**/*.sln"
+  buildPlatform: "Any CPU"
+  buildConfiguration: "Release"
+
+steps:
+  - task: UseDotNet@2
+    displayName: Use Dotnet 7
+    inputs:
+      version: '7.0.x'
+      includePreviewVersions: true # Required for preview versions
+
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '15.9.x'
+    displayName: 'Install Node.js'
+
+  - task: NuGetToolInstaller@0
+    displayName: "Install NuGet"
+    inputs:
+      versionSpec: 6.0.x
+      checkLatest: true
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Dotnet restore'
+    inputs:
+      command: restore
+      projects: '**/*.csproj'
+    
+  - task: DotNetCoreCLI@2
+    displayName: Run unit tests
+    inputs:
+      command: test
+      projects: "**/*Tests/*.csproj"
+      arguments: "--configuration $(buildConfiguration) --logger trx"
+      
+  - task: PublishTestResults@2
+    displayName: Publish test results
+    condition: succeededOrFailed()
+    inputs:
+      testRunner: VSTest
+      testResultsFiles: "**/*.trx"
+
+  - script: dotnet publish CustomerService/CustomerService.csproj -o $(Build.ArtifactStagingDirectory) --configuration Release /p:EnvironmentName=Development
+    displayName: "dotnet publish CustomerService"
+
+  - task: DeleteFiles@1
+    displayName: Delete custom appsettings configs
+    inputs:
+      SourceFolder: $(Build.ArtifactStagingDirectory)
+      Contents: "**/appsettings.*.json*"
+
+  - task: PowerShell@2
+    inputs:
+      targetType: 'inline'
+      script: | 
+        Write-Host "##vso[build.updatebuildnumber]$(Build.SourceBranchName)_$(Build.BuildNumber)"
+
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish Artifact: drop"
+    inputs:
+      PathtoPublish: "$(build.artifactstagingdirectory)"

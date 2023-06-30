@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace CustomerService;
+namespace CustomerService.Extensions;
 
 public static class ProgramExtensions
 {
@@ -24,7 +24,7 @@ public static class ProgramExtensions
        });
         services.AddValidatorsFromAssemblyContaining<Program>(ServiceLifetime.Singleton);
         services.AddScoped<CustomerRepository>();
-        
+
         services.AddCustomVersioning();
         services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
         services.AddAuthentication().AddJwtBearer(o =>

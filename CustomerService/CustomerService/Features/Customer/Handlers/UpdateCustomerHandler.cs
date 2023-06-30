@@ -25,7 +25,7 @@ public class UpdateCustomerHandler : IRequestHandler<Commands.UpdateCustomerComm
         if (customer is null)
             throw new CustomerNotFoundException();
 
-        await _customerRepositoryRepository.Update(_mapper.Map(request.CustomerDto, customer));
+        await _customerRepositoryRepository.Update(_mapper.Map(request.CustomerResponseDto, customer));
         
         return  _mapper.Map<ResultDto>(customer);
     }

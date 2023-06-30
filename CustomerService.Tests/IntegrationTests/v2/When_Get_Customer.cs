@@ -22,8 +22,8 @@ public class When_Get_Customer : TestBase
         //Assert
         response.StatusCode.Should().Be(HttpStatusCode.OK);
 
-        var content = await response.Content.ReadFromJsonAsync<Features.Customer.DTOs.v2.CustomerDto>();
-        content.Should().Be(new Features.Customer.DTOs.v2.CustomerDto(
+        var content = await response.Content.ReadFromJsonAsync<CustomerResponseDto>();
+        content.Should().Be(new CustomerResponseDto(customer.Id,
             customer.FirstName,
             customer.LastName,
             customer.EmailAddress,

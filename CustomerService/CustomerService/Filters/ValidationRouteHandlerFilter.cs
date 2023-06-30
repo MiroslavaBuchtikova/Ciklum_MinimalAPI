@@ -23,7 +23,7 @@ public static class ValidationFilter
     private static async ValueTask<object?> Validate(IEnumerable<ValidationDescriptor> validationDescriptors,
         EndpointFilterInvocationContext invocationContext, EndpointFilterDelegate next)
     {
-        foreach (ValidationDescriptor descriptor in validationDescriptors)
+        foreach (var descriptor in validationDescriptors)
         {
             var argument = invocationContext.Arguments[descriptor.ArgumentIndex];
 
@@ -46,20 +46,18 @@ public static class ValidationFilter
 
     static IEnumerable<ValidationDescriptor> GetValidators(MethodInfo methodInfo, IServiceProvider serviceProvider)
     {
-        ParameterInfo[] parameters = methodInfo.GetParameters();
+        var parameters = methodInfo.GetParameters();
 
-        for (int i = 0; i < parameters.Length; i++)
+        for (var i = 0; i < parameters.Length; i++)
         {
-            ParameterInfo parameter = parameters[i];
+            var parameter = parameters[i];
 
-            Type validatorType = typeof(IValidator<>).MakeGenericType(parameter.ParameterType);
+            var validatorType = typeof(IValidator<>).MakeGenericType(parameter.ParameterType);
 
-            IValidator? validator = serviceProvider.GetService(validatorType) as IValidator;
-
-            if (validator is not null)
+            if (serviceProvider.GetService(validatorType) is IValidator validator)
             {
                 yield return new ValidationDescriptor
-                    { ArgumentIndex = i, ArgumentType = parameter.ParameterType, Validator = validator };
+                    { ArgumentIndex = i, Validator = validator };
             }
         }
     }
@@ -67,7 +65,6 @@ public static class ValidationFilter
     private class ValidationDescriptor
     {
         public required int ArgumentIndex { get; init; }
-        public required Type ArgumentType { get; init; }
         public required IValidator Validator { get; init; }
     }
 }

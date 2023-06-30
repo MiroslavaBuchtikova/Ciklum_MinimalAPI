@@ -13,13 +13,13 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation.v2
             // Configure the operation properties
             operation.OperationId = "CreateCustomer customer";
             operation.Summary = "CreateCustomer customer summary";
-            operation.Description = "CreateCustomer API endpoint: Creates a new customerDto by providing relevant details in the request body and stores the information in the system.";
+            operation.Description = "CreateCustomer API endpoint: Creates a new customerResponseDto by providing relevant details in the request body and stores the information in the system.";
 
             // Configure the request body
             var openApiRequestBody = operation.RequestBody;
             openApiRequestBody.Description = "Request body description";
             openApiRequestBody.Content["application/json"].Example = new OpenApiString(
-                JsonSerializer.Serialize(new CustomerDto("FirstName", "LastName", "EmailAddress", Gender.Unknown)));
+                JsonSerializer.Serialize(new CustomerRequestDto( "FirstName", "LastName", "EmailAddress", Gender.Unknown)));
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();

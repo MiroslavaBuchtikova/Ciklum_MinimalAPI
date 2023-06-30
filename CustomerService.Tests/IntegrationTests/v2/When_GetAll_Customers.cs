@@ -22,10 +22,10 @@ public class When_Get_All_Customers : TestBase
         //Assert
         response.StatusCode.Should().Be(HttpStatusCode.OK);
 
-        var content = await response.Content.ReadFromJsonAsync<List<CustomerDto>>();
-        content.Should().Equal(new List<CustomerDto>()
+        var content = await response.Content.ReadFromJsonAsync<List<CustomerResponseDto>>();
+        content.Should().Equal(new List<CustomerResponseDto>()
         {
-            new(
+            new(customer.Id,
                 customer.FirstName,
                 customer.LastName,
                 customer.EmailAddress,

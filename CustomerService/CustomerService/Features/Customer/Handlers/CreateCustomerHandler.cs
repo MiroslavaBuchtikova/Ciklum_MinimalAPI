@@ -18,7 +18,7 @@ public class CreateCustomerHandler : IRequestHandler<Commands.CreateCustomerComm
 
     public async Task<ResultDto> Handle(Commands.CreateCustomerCommand command, CancellationToken cancellationToken)
     {
-        var customer = _mapper.Map<Core.Entities.CustomerEntity>(command.CustomerDto);
+        var customer = _mapper.Map<Core.Entities.CustomerEntity>(command.CustomerResponseDto);
         await _customerRepository.Add(customer);
 
         return _mapper.Map<ResultDto>(customer);

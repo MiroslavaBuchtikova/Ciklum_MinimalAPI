@@ -5,7 +5,7 @@ using MediatR;
 
 namespace CustomerService.Features.Customer.Handlers;
 
-public class GetCustomerHandler : IRequestHandler<Queries.Get, DTOs.CustomerDto>
+public class GetCustomerHandler : IRequestHandler<Queries.Get, DTOs.CustomerResponseDto>
 {
     private readonly CustomerRepository _customerRepositoryRepository;
     private readonly IMapper _mapper;
@@ -16,10 +16,10 @@ public class GetCustomerHandler : IRequestHandler<Queries.Get, DTOs.CustomerDto>
         _mapper = mapper;
     }
 
-    public async Task<DTOs.CustomerDto> Handle(Queries.Get request, CancellationToken cancellationToken)
+    public async Task<DTOs.CustomerResponseDto> Handle(Queries.Get request, CancellationToken cancellationToken)
     {
         return await _customerRepositoryRepository.GetById(request.Id) is Core.Entities.CustomerEntity customer ?
-            _mapper.Map<DTOs.CustomerDto>(customer)
+            _mapper.Map<DTOs.CustomerResponseDto>(customer)
             : throw new CustomerNotFoundException();
         
     }

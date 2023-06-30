@@ -1,6 +1,6 @@
 namespace CustomerService.Features.Customer.DTOs.v2;
 
-public record CustomerDto
+public record CustomerRequestDto
 (
     string FirstName,
     string LastName,
@@ -10,7 +10,7 @@ public record CustomerDto
 
 public enum Gender
 {
-    Unknown,
-    Male,
-    Female
+    Unknown = 0,
+    Male = 1,
+    Female = 2
 }

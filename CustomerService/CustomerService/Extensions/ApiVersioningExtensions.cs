@@ -1,6 +1,6 @@
 ﻿using Asp.Versioning;
 
-namespace CustomerService.Swagger;
+namespace CustomerService.Extensions;
 
 public static class ApiVersioningExtensions
 {
@@ -25,8 +25,6 @@ public static class ApiVersioningExtensions
                 options =>
                 {
                     options.GroupNameFormat = "'v'VVV";
-
-
                     options.SubstituteApiVersionInUrl = true;
                 })
             .AddMvc();

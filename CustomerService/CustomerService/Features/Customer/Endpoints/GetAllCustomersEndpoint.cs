@@ -18,7 +18,7 @@ public class GetAllCustomersEndpoint : IApiRoute
             .HasApiVersion(2.0)
             .WithOpenApi(GetCustomersConfiguration.ConfigureOpenApiOperation);
     }
-    private async Task<List<DTOs.CustomerDto>> GetAll(CustomerRepository customerRepository, IMapper mapper, IMediator mediator)
+    private async Task<List<DTOs.CustomerResponseDto>> GetAll(CustomerRepository customerRepository, IMapper mapper, IMediator mediator)
     {
         var query = new Queries.GetAll();
        return await mediator.Send(query);

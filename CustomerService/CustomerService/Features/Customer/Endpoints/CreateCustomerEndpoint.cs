@@ -2,6 +2,7 @@ using CustomerService.ApiAutoregistration;
 using CustomerService.Features.Customer.Commands;
 using CustomerService.Features.Customer.DTOs;
 using CustomerService.Features.Customer.SwaggerDocumentation;
+using CustomerService.Filters;
 using MediatR;
 
 namespace CustomerService.Features.Customer.Endpoints;
@@ -14,12 +15,12 @@ public class CreateCustomerEndpoint : IApiRoute
             .RequireAuthorization()
             .WithApiVersionSet(builder.NewApiVersionSet("Customers").Build())
             .HasApiVersion(1.0)
+            .AddEndpointFilterFactory(ValidationFilter.ValidationFilterFactory)
             .WithOpenApi(CreateCustomerConfiguration.ConfigureOpenApiOperation);
     }
-
-    private async Task<ResultDto> Create(CustomerDto customerDto, IMediator mediator)
+    private async Task<ResultDto> Create(CustomerRequestDto customerResponseDto, IMediator mediator)
     {
-        var request = new CreateCustomerCommand(customerDto);
+        var request = new CreateCustomerCommand(customerResponseDto);
         return await mediator.Send(request);
     }
 }

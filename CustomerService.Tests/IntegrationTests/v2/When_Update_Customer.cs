@@ -6,7 +6,7 @@ using CustomerService.Features.Customer.DTOs.v2;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json;
-using CustomerDto = CustomerService.Features.Customer.DTOs.v2.CustomerDto;
+using CustomerRequestDto = CustomerService.Features.Customer.DTOs.v2.CustomerRequestDto;
 
 namespace CustomerService.Tests.IntegrationTests.v2;
 
@@ -18,7 +18,7 @@ public class When_Update_Customer : TestBase
     {
         //Arrange
         var customer = ArrangeDbData();
-        var updatedCustomerDto = new CustomerDto("firstname_updated", "lastname_updated", "email@email_updated.sk", Gender.Female);
+        var updatedCustomerDto = new CustomerRequestDto("firstname_updated", "lastname_updated", "email@email_updated.sk", Gender.Female);
 
         //Act
         var client = CreateCustomerClient();

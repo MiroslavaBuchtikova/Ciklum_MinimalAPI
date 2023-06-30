@@ -1,10 +1,10 @@
 using FluentValidation;
 
-namespace CustomerService.Validators;
+namespace CustomerService.Features.Customer.Validators;
 
-public class Customer : AbstractValidator<Features.Customer.DTOs.CustomerDto>
+public class CustomerRequest : AbstractValidator<DTOs.CustomerRequestDto>
 {
-    public Customer()
+    public CustomerRequest()
     {
         RuleFor(x => x.FirstName).NotEmpty().WithMessage("First name cannot be empty");
         RuleFor(x => x.LastName).NotEmpty().WithMessage("Last name cannot be empty");

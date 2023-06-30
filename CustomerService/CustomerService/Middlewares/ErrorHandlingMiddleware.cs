@@ -21,11 +21,6 @@ public class CustomErrorHandlerMiddleware
         {
             await _next(context);
         }
-        catch (InvalidEmailException ex)
-        {
-            _logger.LogError(ex, "A custom exception has occurred.");
-            await GenerateExceptionResponse(context, ex.Message, HttpStatusCode.BadRequest);
-        }
         catch (CustomerNotFoundException ex)
         {
             _logger.LogError(ex, "A custom exception has occurred.");

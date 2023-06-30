@@ -3,4 +3,4 @@ using MediatR;
 
 namespace CustomerService.Features.Customer.Commands;
 
-public record UpdateCustomerCommand(Guid Id, CustomerDto CustomerDto) : IRequest<ResultDto>;
+public record UpdateCustomerCommand(Guid Id, CustomerRequestDto CustomerResponseDto) : IRequest<ResultDto>;

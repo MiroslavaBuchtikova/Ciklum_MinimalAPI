@@ -1065,3 +1065,312 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2023-06-26 16:31:13.504 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
 2023-06-26 16:31:13.783 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.8230ms
 2023-06-26 16:31:23.619 +02:00 [INF] Application is shutting down...
+2023-06-28 14:18:03.933 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-28 14:18:04.375 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-28 14:18:04.584 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-28 14:18:04.588 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-28 14:18:04.590 +02:00 [INF] Hosting environment: Development
+2023-06-28 14:18:04.592 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-28 14:18:05.853 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-28 14:18:06.347 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 495.7335ms
+2023-06-28 14:18:06.568 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-28 14:18:07.034 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 465.7078ms
+2023-06-28 14:18:11.445 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-28 14:18:11.506 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 63.2676ms
+2023-06-29 17:22:46.817 +02:00 [INF] Application is shutting down...
+2023-06-29 17:29:47.057 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 17:29:47.335 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 17:29:47.457 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 17:29:47.460 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 17:29:47.460 +02:00 [INF] Hosting environment: Development
+2023-06-29 17:29:47.461 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 17:29:47.867 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 17:29:48.657 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 790.1205ms
+2023-06-29 17:29:48.668 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - -
+2023-06-29 17:29:48.739 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-06-29 17:29:48.745 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 77.3990ms
+2023-06-29 17:29:48.808 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:29:48.882 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/apple-touch-icon-precomposed.png - -
+2023-06-29 17:29:48.887 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/apple-touch-icon-precomposed.png - - - 404 0 - 4.6857ms
+2023-06-29 17:29:48.889 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/apple-touch-icon.png - -
+2023-06-29 17:29:48.892 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/apple-touch-icon.png - - - 404 0 - 2.2564ms
+2023-06-29 17:29:49.054 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.5235ms
+2023-06-29 17:30:28.647 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-29 17:30:28.713 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 69.5141ms
+2023-06-29 17:30:44.032 +02:00 [INF] Application is shutting down...
+2023-06-29 17:36:41.205 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 17:36:41.490 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 17:36:41.597 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 17:36:41.600 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 17:36:41.601 +02:00 [INF] Hosting environment: Development
+2023-06-29 17:36:41.601 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 17:36:42.381 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 17:36:42.704 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 323.1061ms
+2023-06-29 17:36:42.815 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:36:43.007 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.8905ms
+2023-06-29 17:37:08.822 +02:00 [INF] Application is shutting down...
+2023-06-29 17:38:37.591 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 17:39:33.945 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 17:39:34.235 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 17:39:34.348 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 17:39:34.351 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 17:39:34.352 +02:00 [INF] Hosting environment: Development
+2023-06-29 17:39:34.352 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 17:39:34.675 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 17:39:35.262 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 582.2679ms
+2023-06-29 17:39:35.349 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:39:35.570 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.9006ms
+2023-06-29 17:41:22.409 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:41:22.442 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.4937ms
+2023-06-29 17:41:32.703 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:41:32.728 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.4693ms
+2023-06-29 17:41:58.685 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:41:58.701 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.7319ms
+2023-06-29 17:42:53.923 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:42:53.937 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.1162ms
+2023-06-29 17:43:27.011 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-29 17:43:27.043 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 32.4692ms
+2023-06-29 17:43:29.859 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-29 17:43:29.874 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 15.5554ms
+2023-06-29 17:43:46.135 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 17:43:46.141 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.0486ms
+2023-06-29 18:35:05.701 +02:00 [INF] Application is shutting down...
+2023-06-29 18:58:00.479 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 18:58:00.790 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 18:58:00.917 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 18:58:00.921 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 18:58:00.922 +02:00 [INF] Hosting environment: Development
+2023-06-29 18:58:00.922 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 18:58:01.907 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 18:58:02.190 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 284.6635ms
+2023-06-29 18:58:02.317 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 18:58:02.557 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 239.5936ms
+2023-06-29 18:59:39.624 +02:00 [INF] Application is shutting down...
+2023-06-29 19:02:23.870 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:02:24.167 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:02:24.281 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:02:24.284 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:02:24.284 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:02:24.285 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:02:24.691 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:02:25.150 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 456.2064ms
+2023-06-29 19:02:25.260 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:02:25.455 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.7895ms
+2023-06-29 19:02:41.565 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:02:41.607 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 44.8972ms
+2023-06-29 19:07:25.436 +02:00 [INF] Application is shutting down...
+2023-06-29 19:18:20.843 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:18:21.470 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:18:21.697 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:18:21.700 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:18:21.701 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:18:21.701 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:18:25.382 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:18:26.036 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 653.7621ms
+2023-06-29 19:18:26.190 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:18:26.548 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 358.5986ms
+2023-06-29 19:18:33.467 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 138
+2023-06-29 19:18:33.517 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-06-29 19:18:33.525 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-06-29 19:18:33.526 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 138 - 401 0 - 60.4307ms
+2023-06-29 19:18:42.060 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/security/getToken - 0
+2023-06-29 19:18:42.083 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/security/getToken => GetAuthToken'
+2023-06-29 19:18:42.363 +02:00 [INF] Setting HTTP status code 200.
+2023-06-29 19:18:42.367 +02:00 [INF] Writing value of type 'String' as Json.
+2023-06-29 19:18:42.383 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/security/getToken => GetAuthToken'
+2023-06-29 19:18:42.385 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/security/getToken - 0 - 200 - application/json;+charset=utf-8 323.4009ms
+2023-06-29 19:25:32.972 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:25:33.288 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:25:33.418 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:25:33.422 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:25:33.424 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:25:33.424 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:25:34.229 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:25:34.665 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 433.6614ms
+2023-06-29 19:25:34.794 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:25:35.088 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.8650ms
+2023-06-29 19:25:42.061 +02:00 [INF] Application is shutting down...
+2023-06-29 19:25:57.531 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:25:57.836 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:25:57.964 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:25:57.967 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:25:57.968 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:25:57.969 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:25:58.779 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:25:59.327 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 539.6035ms
+2023-06-29 19:25:59.468 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:25:59.681 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.8845ms
+2023-06-29 19:26:14.311 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 109
+2023-06-29 19:26:14.355 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:26:15.306 +02:00 [INF] Saved 1 entities to in-memory store.
+2023-06-29 19:26:15.331 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:26:15.338 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 109 - 200 - application/json;+charset=utf-8 1030.8880ms
+2023-06-29 19:26:19.975 +02:00 [INF] Application is shutting down...
+2023-06-29 19:31:28.777 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:31:29.060 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:31:29.177 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:31:29.180 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:31:29.181 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:31:29.181 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:31:30.065 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:31:30.669 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 607.1687ms
+2023-06-29 19:31:30.796 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:31:31.024 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 227.5910ms
+2023-06-29 19:31:36.943 +02:00 [INF] Application is shutting down...
+2023-06-29 19:41:11.448 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:41:11.761 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:41:11.877 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:41:11.882 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:41:11.883 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:41:11.884 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:41:12.278 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:41:12.765 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 490.9367ms
+2023-06-29 19:41:12.875 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:41:13.108 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 233.5312ms
+2023-06-29 19:41:24.791 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 61
+2023-06-29 19:41:24.841 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:41:25.810 +02:00 [INF] Saved 1 entities to in-memory store.
+2023-06-29 19:41:25.840 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:41:25.848 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 61 - 200 - application/json;+charset=utf-8 1060.5238ms
+2023-06-29 19:42:39.237 +02:00 [INF] Application is shutting down...
+2023-06-29 19:42:45.200 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:42:45.515 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:42:45.621 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:42:45.624 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:42:45.625 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:42:45.626 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:42:46.503 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:42:46.936 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 442.6156ms
+2023-06-29 19:42:47.050 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:42:47.245 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.2699ms
+2023-06-29 19:42:51.723 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 90
+2023-06-29 19:42:51.772 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:42:51.856 +02:00 [INF] Setting HTTP status code 400.
+2023-06-29 19:42:51.860 +02:00 [INF] Writing value of type 'HttpValidationProblemDetails' as Json.
+2023-06-29 19:42:51.873 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:42:51.874 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 90 - 400 - application/problem+json 153.1564ms
+2023-06-29 19:42:58.511 +02:00 [INF] Application is shutting down...
+2023-06-29 19:43:37.380 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 19:43:37.675 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 19:43:37.795 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 19:43:37.798 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 19:43:37.798 +02:00 [INF] Hosting environment: Development
+2023-06-29 19:43:37.799 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 19:43:38.192 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 19:43:38.648 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 448.5952ms
+2023-06-29 19:43:38.762 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 19:43:39.007 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.0203ms
+2023-06-29 19:43:47.097 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 70
+2023-06-29 19:43:47.139 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:43:47.222 +02:00 [INF] Setting HTTP status code 400.
+2023-06-29 19:43:47.226 +02:00 [INF] Writing value of type 'HttpValidationProblemDetails' as Json.
+2023-06-29 19:43:47.240 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/customers => Create'
+2023-06-29 19:43:47.240 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/customers application/json 70 - 400 - application/problem+json 145.4782ms
+2023-06-29 19:43:52.052 +02:00 [INF] Application is shutting down...
+2023-06-29 19:54:03.369 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 22:45:02.217 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-29 22:45:02.693 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-29 22:45:02.885 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-29 22:45:02.889 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-29 22:45:02.891 +02:00 [INF] Hosting environment: Development
+2023-06-29 22:45:02.892 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-29 22:45:03.418 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-29 22:45:04.447 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 1030.5674ms
+2023-06-29 22:45:04.669 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 22:45:04.961 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.4013ms
+2023-06-29 22:45:46.407 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 22:45:46.442 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.8707ms
+2023-06-29 22:46:23.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-29 22:46:23.890 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 54.3021ms
+2023-06-29 22:46:25.725 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-29 22:46:25.746 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.5732ms
+2023-06-29 22:46:46.127 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-29 22:46:46.151 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 23.2774ms
+2023-06-29 23:02:25.125 +02:00 [INF] Application is shutting down...
+2023-06-30 06:15:56.236 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 06:15:58.081 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 06:15:59.489 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 06:15:59.501 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 06:15:59.504 +02:00 [INF] Hosting environment: Development
+2023-06-30 06:15:59.507 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 06:16:01.664 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 06:16:02.090 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 427.1076ms
+2023-06-30 06:16:02.248 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 06:16:02.527 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.8127ms
+2023-06-30 06:21:42.926 +02:00 [INF] Application is shutting down...
+2023-06-30 06:21:48.505 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 06:21:48.947 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 06:21:49.106 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 06:21:49.110 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 06:21:49.111 +02:00 [INF] Hosting environment: Development
+2023-06-30 06:21:49.112 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 06:21:49.411 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 06:21:49.801 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 390.3103ms
+2023-06-30 06:21:49.970 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 06:21:50.233 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 263.1157ms
+2023-06-30 06:46:37.265 +02:00 [INF] Application is shutting down...
+2023-06-30 07:20:53.521 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 07:20:53.979 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 07:20:54.154 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 07:20:54.158 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 07:20:54.159 +02:00 [INF] Hosting environment: Development
+2023-06-30 07:20:54.160 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 07:20:54.744 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 07:20:55.147 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 404.6739ms
+2023-06-30 07:20:55.341 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:20:55.593 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.2509ms
+2023-06-30 07:20:58.909 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:20:58.946 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.1339ms
+2023-06-30 07:22:35.464 +02:00 [INF] Application is shutting down...
+2023-06-30 07:22:47.553 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 07:22:48.004 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 07:22:48.175 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 07:22:48.180 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 07:22:48.182 +02:00 [INF] Hosting environment: Development
+2023-06-30 07:22:48.182 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 07:22:48.838 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 07:22:49.279 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 437.1820ms
+2023-06-30 07:22:49.440 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:22:49.722 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 281.5955ms
+2023-06-30 07:22:54.825 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 07:22:54.851 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 27.7807ms
+2023-06-30 07:22:54.901 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:22:54.931 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 30.1591ms
+2023-06-30 07:22:57.088 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v3/swagger.json - -
+2023-06-30 07:22:57.105 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v3/swagger.json - - - 200 - application/json;charset=utf-8 16.1259ms
+2023-06-30 07:23:11.157 +02:00 [INF] Application is shutting down...
+2023-06-30 07:28:08.954 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 07:28:09.444 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 07:28:09.614 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 07:28:09.620 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 07:28:09.621 +02:00 [INF] Hosting environment: Development
+2023-06-30 07:28:09.622 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 07:28:10.106 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 07:28:10.649 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 545.8169ms
+2023-06-30 07:28:10.853 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:28:11.267 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 414.1293ms
+2023-06-30 07:28:14.069 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-30 07:28:14.142 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 75.2563ms
+2023-06-30 07:28:17.117 +02:00 [INF] Application is shutting down...
+2023-06-30 07:34:57.053 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-06-30 07:34:57.501 +02:00 [INF] User profile is available. Using '/Users/buchtikova/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-06-30 07:34:57.667 +02:00 [INF] Now listening on: http://localhost:5208
+2023-06-30 07:34:57.672 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-06-30 07:34:57.674 +02:00 [INF] Hosting environment: Development
+2023-06-30 07:34:57.675 +02:00 [INF] Content root path: /Users/buchtikova/RiderProjects/Ciklum_MinimalAPI/CustomerService/CustomerService
+2023-06-30 07:34:58.191 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/index.html - -
+2023-06-30 07:34:58.656 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/index.html - - - 200 - text/html;charset=utf-8 469.1557ms
+2023-06-30 07:34:58.824 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:34:59.099 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.5402ms
+2023-06-30 07:35:04.714 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - -
+2023-06-30 07:35:04.787 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 74.8545ms
+2023-06-30 07:35:06.837 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - -
+2023-06-30 07:35:06.856 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.3167ms
+2023-06-30 07:35:11.092 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5208/api/v1/security/getToken - 0
+2023-06-30 07:35:11.142 +02:00 [INF] Executing endpoint 'HTTP: POST api/v{version:apiVersion}/security/getToken => GetAuthToken'
+2023-06-30 07:35:11.350 +02:00 [INF] Setting HTTP status code 200.
+2023-06-30 07:35:11.355 +02:00 [INF] Writing value of type 'String' as Json.
+2023-06-30 07:35:11.372 +02:00 [INF] Executed endpoint 'HTTP: POST api/v{version:apiVersion}/security/getToken => GetAuthToken'
+2023-06-30 07:35:11.373 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5208/api/v1/security/getToken - 0 - 200 - application/json;+charset=utf-8 280.7750ms
+2023-06-30 07:35:17.333 +02:00 [INF] Application is shutting down...

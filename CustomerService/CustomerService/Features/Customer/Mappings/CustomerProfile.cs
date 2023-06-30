@@ -6,10 +6,10 @@ public class Customer : Profile
 {
     public Customer()
     {
-        CreateMap<DTOs.CustomerDto, Core.Entities.CustomerEntity>();
-        CreateMap<Core.Entities.CustomerEntity, DTOs.CustomerDto>();
+        CreateMap<DTOs.CustomerRequestDto, Core.Entities.CustomerEntity>();
+        CreateMap<Core.Entities.CustomerEntity, DTOs.CustomerResponseDto>();
         
-        CreateMap<DTOs.v2.CustomerDto, Core.Entities.CustomerEntity>();
-        CreateMap<Core.Entities.CustomerEntity, DTOs.v2.CustomerDto>();
+        CreateMap<DTOs.v2.CustomerRequestDto, Core.Entities.CustomerEntity>();
+        CreateMap<Core.Entities.CustomerEntity, DTOs.v2.CustomerResponseDto>();
     }
 }

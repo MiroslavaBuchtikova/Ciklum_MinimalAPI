@@ -18,7 +18,7 @@ public class When_Create_Customer : TestBase
         
         //Act
         var res = await client.PostAsync("/api/v1/customers",
-            new StringContent(JsonConvert.SerializeObject(new CustomerDto("test", "test", "test@test.sk")), Encoding.Default,
+            new StringContent(JsonConvert.SerializeObject(new CustomerRequestDto("test", "test", "test@test.sk")), Encoding.Default,
                 "application/json"));
 
         //Assert

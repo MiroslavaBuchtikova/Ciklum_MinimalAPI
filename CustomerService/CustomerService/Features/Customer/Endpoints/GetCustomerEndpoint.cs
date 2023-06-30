@@ -18,7 +18,7 @@ public class GetCustomerEndpoint : IApiRoute
             .WithOpenApi(GetCustomerConfiguration.ConfigureOpenApiOperation);
     }
 
-    private async Task<DTOs.CustomerDto> Get(Guid id, CustomerRepository customerRepository,
+    private async Task<DTOs.CustomerResponseDto> Get(Guid id, CustomerRepository customerRepository,
         IMapper mapper,
         IMediator mediator)
     {
