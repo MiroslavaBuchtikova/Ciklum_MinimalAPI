@@ -14,15 +14,14 @@ namespace CustomerService.Tests.IntegrationTests.v2;
 public class When_Update_Customer : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Have_Valid_Response()
+    public async Task Then_Customer_Should_Be_Edited_In_Db()
     {
         //Arrange
         var customer = ArrangeDbData();
         var updatedCustomerDto = new CustomerRequestDto("firstname_updated", "lastname_updated", "email@email_updated.sk", Gender.Female);
 
         //Act
-        var client = CreateCustomerClient();
-        var response = await client.PutAsync($"/api/v2/customers/{customer.Id}", new StringContent(
+        var response = await HttpClient.PutAsync($"/api/v2/customers/{customer.Id}", new StringContent(
             JsonConvert.SerializeObject(updatedCustomerDto), Encoding.Default,
             "application/json"));
 

@@ -10,15 +10,15 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "CreateCustomer customer";
-            operation.Summary = "CreateCustomer customer summary";
-            operation.Description = "CreateCustomer customer API endpoint: Creates a new customerResponseDto by providing relevant details in the request body and stores the information in the system.";
+            operation.OperationId = "Create customer customer";
+            operation.Summary = "Create customer customer summary";
+            operation.Description = "Create customer API endpoint: Creates a new customerResponseDto by providing relevant details in the request body and stores the information in the system.";
 
             // Configure the request body
             var openApiRequestBody = operation.RequestBody;
             openApiRequestBody.Description = "Request body description";
             openApiRequestBody.Content["application/json"].Example = new OpenApiString(
-                JsonSerializer.Serialize(new DTOs.CustomerRequestDto("FirstName", "LastName", "EmailAddress")));
+                JsonSerializer.Serialize(new DTOs.CustomerRequestDto("FirstName", "LastName", "EmailAddress@test.com")));
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();

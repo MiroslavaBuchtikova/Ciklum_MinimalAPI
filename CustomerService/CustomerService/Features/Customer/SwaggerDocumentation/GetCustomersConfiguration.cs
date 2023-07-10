@@ -11,16 +11,16 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "GetCustomer Customers";
-            operation.Summary = "GetCustomer customers summary";
-            operation.Description = "GetCustomer Customers description";
+            operation.OperationId = "Get all customers";
+            operation.Summary = "Get all customers summary";
+            operation.Description = "Get all customers description";
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();
             operation.Responses["200"].Content["application/json"] = new OpenApiMediaType()
             {
                 Example = new OpenApiString(
-                    JsonSerializer.Serialize(new List<DTOs.CustomerResponseDto>()
+                    JsonSerializer.Serialize(new List<CustomerResponseDto>()
                     {
                         new(Guid.NewGuid(),"Firstname", "Lastname", "EmailAddress")
                     }))

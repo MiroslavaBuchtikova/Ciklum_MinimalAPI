@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace CustomerService.Features.Authorization.Handlers;
 
-public class GetAuthorizationTokenEndpoint : IRequestHandler<Authorization.Queries.GetAuthorizationTokenQuery, string>
+public class GetAuthorizationTokenEndpoint : IRequestHandler<Queries.GetAuthorizationTokenQuery, string>
 {
     private readonly IMemoryCache _cache;
     private readonly IConfiguration _configuration;
@@ -17,7 +17,7 @@ public class GetAuthorizationTokenEndpoint : IRequestHandler<Authorization.Queri
         _configuration = configuration;
     }
 
-    public async Task<string> Handle(Authorization.Queries.GetAuthorizationTokenQuery request, CancellationToken cancellationToken)
+    public async Task<string> Handle(Queries.GetAuthorizationTokenQuery request, CancellationToken cancellationToken)
     {
         var cacheKey = "auth_token";
 

@@ -10,14 +10,13 @@ namespace CustomerService.Tests.IntegrationTests;
 public class When_Delete_Customer : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Have_Valid_Response()
+    public async Task Then_Customer_Should_Be_Removed_From_Db()
     {
         //Arrange
         var customer = ArrangeDbData();
         
         //Act
-        var client = CreateCustomerClient();
-        var response = await client.DeleteAsync($"/api/v1/customers/{customer.Id}");
+        var response = await HttpClient.DeleteAsync($"/api/v1/customers/{customer.Id}");
 
         //Assert
         response.StatusCode.Should().Be(HttpStatusCode.OK);

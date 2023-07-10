@@ -11,9 +11,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation.v2
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "CreateCustomer customer";
-            operation.Summary = "CreateCustomer customer summary";
-            operation.Description = "CreateCustomer API endpoint: Creates a new customerResponseDto by providing relevant details in the request body and stores the information in the system.";
+            operation.OperationId = "Create customer";
+            operation.Summary = "Create customer summary";
+            operation.Description = "Create customer API endpoint: Creates a new customerResponseDto by providing relevant details in the request body and stores the information in the system.";
 
             // Configure the request body
             var openApiRequestBody = operation.RequestBody;

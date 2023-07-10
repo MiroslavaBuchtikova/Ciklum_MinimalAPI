@@ -1,4 +1,5 @@
 using System.Text.Json;
+using CustomerService.Features.Customer.DTOs;
 using CustomerService.Swagger;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
@@ -10,9 +11,9 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
         public static OpenApiOperation ConfigureOpenApiOperation(OpenApiOperation operation)
         {
             // Configure the operation properties
-            operation.OperationId = "GetCustomer CustomerResponseDto";
-            operation.Summary = "GetCustomer customerResponseDto summary";
-            operation.Description = "GetCustomer CustomerResponseDto description";
+            operation.OperationId = "Get customer by Id";
+            operation.Summary = "Get customer by Id summary";
+            operation.Description = "Get customer by Id description";
 
             // Configure the request parameter
             var openApiRequestBody = operation.Parameters[0];
@@ -24,13 +25,8 @@ namespace CustomerService.Features.Customer.SwaggerDocumentation
             operation.Responses["200"].Content["application/json"] = new OpenApiMediaType()
             {
                 Example = new OpenApiString(
-                    JsonSerializer.Serialize(new Core.Entities.CustomerEntity()
-                    {
-                        Id = Guid.NewGuid(),
-                        FirstName = "FirstName",
-                        LastName = "LastName",
-                        EmailAddress = "EmailAddress"
-                    }))
+                    JsonSerializer.Serialize(new CustomerResponseDto(Guid.NewGuid(), "FirstName", "LastName",
+                        "EmailAddress")))
             };
 
             return operation;

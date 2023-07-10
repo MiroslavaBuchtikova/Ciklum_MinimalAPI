@@ -11,11 +11,11 @@ namespace CustomerService.Features.Authorization.SwaggerDocumentation
             // Configure the operation properties
             operation.OperationId = "Authorization Token";
             operation.Summary = "Authorization Token summary";
-            operation.Description = "authorization token description";
+            operation.Description = "Authorization token description";
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();
-            operation.Responses["200"].Content["application/json"] = new OpenApiMediaType()
+            operation.Responses["200"].Content["application/json"] = new OpenApiMediaType
             {
                 Example = new OpenApiString(
                     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c")

@@ -10,10 +10,10 @@ riderModule.iml
 ../../Ciklum_MinimalAPI/CustomerService.Core/bin/
 ../../Ciklum_MinimalAPI/CustomerService.Core/obj/
 .idea/
-./CustomerService.Tests/bin/
-./CustomerService.Tests/obj/
-./CustomerService.Persistence/bin/
-./CustomerService.Persistence/obj/
-./CustomerService.Core/bin/
-./CustomerService.Core/obj/
-./CustomerService.Core/Debug/
+./CustomerService.Tests/bin/(
+./CustomerService.Tests/obj/*
+./CustomerService.Persistence/bin/*
+./CustomerService.Persistence/obj/*
+./CustomerService.Core/bin/*
+./CustomerService.Core/obj/*
+./CustomerService.Core/Debug/*

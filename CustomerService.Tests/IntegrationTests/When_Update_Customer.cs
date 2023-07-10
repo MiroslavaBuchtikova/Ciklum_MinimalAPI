@@ -12,16 +12,15 @@ namespace CustomerService.Tests.IntegrationTests;
 public class When_Update_Customer : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Have_Valid_Response()
+    public async Task Then_Customer_Should_Be_Edited_In_Db()
     {
         //Arrange
         var customer = ArrangeDbData();
-        var updatedCustomerDto = new CustomerResponseDto(Guid.NewGuid(),"firstname_updated", "lastname_updated", "email@email_updated.sk");
+        var updatedCustomer = new CustomerResponseDto(Guid.NewGuid(),"firstname_updated", "lastname_updated", "email@email_updated.sk");
 
         //Act
-        var client = CreateCustomerClient();
-        var response = await client.PutAsync($"/api/v1/customers/{customer.Id}", new StringContent(
-            JsonConvert.SerializeObject(updatedCustomerDto), Encoding.Default,
+        var response = await HttpClient.PutAsync($"/api/v1/customers/{customer.Id}", new StringContent(
+            JsonConvert.SerializeObject(updatedCustomer), Encoding.Default,
             "application/json"));
 
         //Assert

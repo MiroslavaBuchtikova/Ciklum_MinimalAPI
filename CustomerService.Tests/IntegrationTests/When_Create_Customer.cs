@@ -11,14 +11,14 @@ namespace CustomerService.Tests.IntegrationTests;
 public class When_Create_Customer : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Have_Valid_Response()
+    public async Task Then_Customer_Should_Be_Added_To_Database()
     {
         //Arrange
-        var client = new TestBase().CreateCustomerClient();
-        
+        var expectedCustomer = new CustomerRequestDto("TestFirstname", "TestLastname", "test@test.sk");
+
         //Act
-        var res = await client.PostAsync("/api/v1/customers",
-            new StringContent(JsonConvert.SerializeObject(new CustomerRequestDto("test", "test", "test@test.sk")), Encoding.Default,
+        var res = await HttpClient.PostAsync("/api/v1/customers",
+            new StringContent(JsonConvert.SerializeObject(expectedCustomer), Encoding.Default,
                 "application/json"));
 
         //Assert

@@ -10,14 +10,13 @@ namespace CustomerService.Tests.IntegrationTests;
 public class When_Get_All_Customers : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Have_Valid_Response()
+    public async Task Then_Customers_Should_Be_Returned_From_Db()
     {
         //Arrange
         var customer = ArrangeDbData();
 
         //Act
-        var client = CreateCustomerClient();
-        var response = await client.GetAsync($"/api/v1/customers");
+        var response = await HttpClient.GetAsync($"/api/v1/customers");
 
         //Assert
         response.StatusCode.Should().Be(HttpStatusCode.OK);
