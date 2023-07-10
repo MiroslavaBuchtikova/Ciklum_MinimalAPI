@@ -61,7 +61,7 @@ public class TestBase
                     { ClaimTypes.Role, "admin" },
                     {"scope", "flight-api"}
                 };
-            var httpClient = _server?.CreateClient();
+            var httpClient = _server.CreateClient();
             httpClient.SetFakeBearerToken(claims);
             return httpClient;
         }

@@ -19,6 +19,10 @@ public static class ResponseInfo
             ["404"] = new()
             {
                 Description = "Not found"
+            },
+            ["401"] = new()
+            {
+                Description = "Unauthorized"
             }
         });
     }

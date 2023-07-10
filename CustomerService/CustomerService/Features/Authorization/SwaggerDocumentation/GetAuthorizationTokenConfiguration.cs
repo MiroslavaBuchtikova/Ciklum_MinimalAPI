@@ -15,6 +15,7 @@ namespace CustomerService.Features.Authorization.SwaggerDocumentation
 
             // Configure the responses
             operation.Responses = ResponseInfo.GetResponsesInfo();
+            operation.Responses.Remove("401");
             operation.Responses["200"].Content["application/json"] = new OpenApiMediaType
             {
                 Example = new OpenApiString(
