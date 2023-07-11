@@ -12,7 +12,7 @@ namespace CustomerService.Tests.IntegrationTests;
 public class When_Update_Customer_Who_Doesnt_Exists : TestBase
 {
     [TestMethod]
-    public async Task Then_Customer_Should_Be_Edited_In_Db()
+    public async Task Then__Not_Found_Error_Should_Be_Returned()
     {
         //Arrange
         var updatedCustomer = new CustomerRequestDto( "firstname_updated", "lastname_updated",

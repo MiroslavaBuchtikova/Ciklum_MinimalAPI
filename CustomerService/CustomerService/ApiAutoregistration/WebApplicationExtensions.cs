@@ -14,8 +14,7 @@ public static class WebApplicationExtensions
             route?.MapEndpoint(app); 
         }
     }
-
-
+    
     private static IEnumerable<Type> GetApiRouteTypes()
     {
         var apiRouteType = typeof(IApiRoute);

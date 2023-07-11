@@ -25,7 +25,7 @@ public class TestBase
                 x.Ignore(CoreEventId.DetachedLazyLoadingWarning);
             }).Options;
 
-    public TestBase()
+    protected TestBase()
     {
         _server = new WebApplicationFactory<Program>()
             .WithWebHostBuilder(builder =>
@@ -59,7 +59,7 @@ public class TestBase
                 {
                     { ClaimTypes.Name, "test@sample.com" },
                     { ClaimTypes.Role, "admin" },
-                    {"scope", "flight-api"}
+                    {"scope", "customer-api"}
                 };
             var httpClient = _server.CreateClient();
             httpClient.SetFakeBearerToken(claims);
