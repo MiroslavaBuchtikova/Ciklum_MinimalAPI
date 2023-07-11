@@ -1,5 +1,4 @@
 using System.Reflection;
-using CustomerService;
 using CustomerService.ApiAutoregistration;
 using CustomerService.Extensions;
 using CustomerService.Middlewares;

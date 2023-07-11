@@ -8,15 +8,10 @@ namespace CustomerService.Swagger;
 
 public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
 {
-    private readonly IApiVersionDescriptionProvider provider;
+    private readonly IApiVersionDescriptionProvider _provider;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ConfigureSwaggerOptions"/> class.
-    /// </summary>
-    /// <param name="provider">The <see cref="IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
-    public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
-
-    /// <inheritdoc />
+    public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => _provider = provider;
+    
     public void Configure(SwaggerGenOptions options)
     {
         var securityScheme = new OpenApiSecurityScheme()
@@ -45,8 +40,8 @@ public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
         };
         options.AddSecurityDefinition("Bearer", securityScheme);
         options.AddSecurityRequirement(securityReq);
-        // add a swagger document for each discovered API version
-        foreach (var description in provider.ApiVersionDescriptions)
+
+        foreach (var description in _provider.ApiVersionDescriptions)
         {
             options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
         }

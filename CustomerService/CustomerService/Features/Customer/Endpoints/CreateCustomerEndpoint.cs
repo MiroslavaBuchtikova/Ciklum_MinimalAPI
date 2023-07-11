@@ -4,7 +4,6 @@ using CustomerService.Features.Customer.DTOs;
 using CustomerService.Features.Customer.SwaggerDocumentation;
 using CustomerService.Filters;
 using MediatR;
-
 namespace CustomerService.Features.Customer.Endpoints;
 
 public class CreateCustomerEndpoint : IApiRoute

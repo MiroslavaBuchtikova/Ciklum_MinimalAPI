@@ -9,7 +9,7 @@ public static class ValidationFilter
     public static EndpointFilterDelegate ValidationFilterFactory(EndpointFilterFactoryContext context,
         EndpointFilterDelegate next)
     {
-        IEnumerable<ValidationDescriptor> validationDescriptors =
+        var validationDescriptors =
             GetValidators(context.MethodInfo, context.ApplicationServices);
 
         if (validationDescriptors.Any())
